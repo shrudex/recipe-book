@@ -28,6 +28,14 @@ You can access the deployed version of the application here - [recipeeebook.verc
 - Backend: [Render](https://render.com/)
 - Frontend: [Vercel](https://vercel.com/)
 
+## Screenshots
+![image](https://github.com/shrudex/recipe-book/assets/91502997/21949042-ad24-430a-b371-876b2586ebd7)
+---
+![image](https://github.com/shrudex/recipe-book/assets/91502997/d94314fc-271b-4a9c-9bbd-73007d884aeb)
+---
+![image](https://github.com/shrudex/recipe-book/assets/91502997/4b45f392-0309-4d32-b438-30aa213777a0)
+
+
 ## Getting Started
 
 To get started with the Recipe Book project, follow these steps:
