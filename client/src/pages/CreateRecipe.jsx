@@ -43,7 +43,7 @@ export default function CreateRecipe() {
           event.preventDefault();
           try {
             const response = await axios.post(
-              "http://localhost:5000/recipes/create",
+              "https://recipe-book-gha2.onrender.com/create",
               {
                 name: recipe.name,
                 ingredients: recipe.ingredients,

@@ -31,7 +31,7 @@ export default function Register() {
               event.preventDefault();
               try {
                 const response = await axios.post(
-                  "http://localhost:5000/auth/register",
+                  "https://recipe-book-gha2.onrender.com/auth/register",
                   {
                     email,
                     username,

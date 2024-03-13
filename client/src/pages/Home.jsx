@@ -8,12 +8,12 @@ const Home = () => {
   useEffect(() => {
     const fetchRecipes = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/recipes");
+        const response = await axios.get("https://recipe-book-gha2.onrender.com/recipes");
         const recipesWithUsernames = await Promise.all(
           response.data.map(async (recipe) => {
             try {
               const userResponse = await axios.post(
-                "http://localhost:5000/auth/getUser",
+                "https://recipe-book-gha2.onrender.com/auth/getUser",
                 { userID: recipe.userOwner }
               );
               const username = userResponse.data.username;
