@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useGetUserID } from "../hooks/useGetUserID";
 
-function Card({
+function SavedCard({
   name,
   imageUrl,
   ingredients,
@@ -10,23 +10,7 @@ function Card({
   cookingTime,
   userName,
   id,
-  savedRecipes,
-  bool,
-  loggedInUser,
 }) {
-  const saveRecipe = async (key) => {
-    const userID = useGetUserID();
-    const response = await axios.put(
-      "https://recipe-book-gha2.onrender.com/recipes/save",
-      {
-        userID,
-        recipeID: id,
-      }
-    );
-    setIs(true);
-  };
-  const [is, setIs] = useState(bool);
-
   return (
     <div className="w-full border rounded-lg shadow border-gray-900">
       <a>
@@ -60,20 +44,9 @@ function Card({
         <p className="mb-3 text-center bg-indigo-600 font-normal w-fit mx-auto px-4 rounded-lg text-white">
           Cooking Time: {cookingTime} minutes
         </p>
-        <a className="inline-flex items-center px-3 py-2 text-base md:text-md font-medium text-center text-black">
-          🙋🏻‍♂️ {userName}
-        </a>
-        {loggedInUser === null ? null : (
-          <button
-            onClick={() => saveRecipe(id)}
-            className="mb-3 text-center bg-indigo-600 font-normal w-fit mx-auto px-4 rounded-lg text-white"
-          >
-            {is ? "✨ Saved" : "⭐"}
-          </button>
-        )}
       </div>
     </div>
   );
 }
 
-export default Card;
+export default SavedCard;
