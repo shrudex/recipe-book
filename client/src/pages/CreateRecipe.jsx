@@ -50,7 +50,7 @@ export default function CreateRecipe() {
                 instructions: recipe.instructions,
                 imageUrl: recipe.imageUrl,
                 cookingTime: recipe.cookingTime,
-                userOwner: userID,
+                userOwner: useGetUserID(),
               }
             );
             if (response.data.message) {
