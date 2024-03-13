@@ -4,13 +4,20 @@ import cors from "cors";
 import mongoose from "mongoose";
 
 import { usersRouter } from "./routes/users.js";
+import { recipesRouter } from "./routes/recipes.js";
+
 import { User } from "./models/Users.js";
+import { Recipe } from "./models/Recipes.js";
 
 const app = express();
 
 app.use(bodyParser.json());
 app.use(cors());
+
 app.use("/auth", usersRouter);
+app.use("/recipes", recipesRouter);
+
+
 
 mongoose
   .connect(
