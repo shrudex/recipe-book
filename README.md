@@ -1,10 +1,11 @@
-# Recipe Book🍴
+# RecipeBook🍴
 
-**Recipe Book** is a beginner-level CRUD project that serves as a recipe book, developed using the MERN stack. It features a simple user interface for creating recipes, viewing all recipes, and saving recipes from other users. The project incorporates authentication using JSON Web Tokens (JWTs) for secure access.
+**RecipeBook** is a beginner-level CRUD project that serves as a recipe book, developed using the MERN stack. It features a simple user interface for creating recipes, viewing all recipes, and saving recipes from other users. The project incorporates authentication using JSON Web Tokens (JWTs) for secure access.
 
 ## Technologies Used
 
 - Frontend:
+
   - React
   - Tailwind CSS
 
@@ -29,12 +30,12 @@ You can access the deployed version of the application here - [recipeeebook.verc
 - Frontend: [Vercel](https://vercel.com/)
 
 ## Screenshots
-![image](https://github.com/shrudex/recipe-book/assets/91502997/21949042-ad24-430a-b371-876b2586ebd7)
----
-![image](https://github.com/shrudex/recipe-book/assets/91502997/d94314fc-271b-4a9c-9bbd-73007d884aeb)
----
-![image](https://github.com/shrudex/recipe-book/assets/91502997/4b45f392-0309-4d32-b438-30aa213777a0)
 
+## ![image](https://github.com/shrudex/recipe-book/assets/91502997/21949042-ad24-430a-b371-876b2586ebd7)
+
+## ![image](https://github.com/shrudex/recipe-book/assets/91502997/d94314fc-271b-4a9c-9bbd-73007d884aeb)
+
+![image](https://github.com/shrudex/recipe-book/assets/91502997/4b45f392-0309-4d32-b438-30aa213777a0)
 
 ## Getting Started
 
